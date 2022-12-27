@@ -24,6 +24,10 @@
 #include "fluid_synth.h"
 #include "fluid_settings.h"
 
+#ifdef _XBOX
+#include <limits.h>
+#endif
+
 /* maximum allowed components of a settings variable (separated by '.') */
 #define MAX_SETTINGS_TOKENS	8	/* currently only a max of 3 are used */
 #define MAX_SETTINGS_LABEL	256	/* max length of a settings variable label */

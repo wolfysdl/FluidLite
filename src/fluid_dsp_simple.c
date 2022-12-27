@@ -82,7 +82,8 @@
 #warning "This code is meant for experiments only.";
 
 /* wave table interpolation */
-for (dsp_i = dsp_start; dsp_i < dsp_end; dsp_i++) {
+for (dsp_i = dsp_start; dsp_i < dsp_end; dsp_i++) 
+{
 
 	dsp_coeff = &interp_coeff[fluid_phase_fract_to_tablerow(dsp_phase)];
 	dsp_phase_index = fluid_phase_index(dsp_phase);
